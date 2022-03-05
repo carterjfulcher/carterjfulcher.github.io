@@ -22,7 +22,7 @@ title: page title
 email: fulcher.carter@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Here lies a collection of poorly researched ideas I find intriguing 
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/"# the subpath of your site, e.g. /blog
 url: "https://carterjfulcher.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: carterjfulcher
 github_username:  carterjfulcher
