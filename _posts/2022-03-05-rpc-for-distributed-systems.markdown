@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Application Specific Load Balancing for Distributed Systems with RPC"
+title:  "Application Specific Load Balancing for Distributed Systems"
 date:   2022-03-05 14:01:45 -0700
 categories: Programming
 ---
 
 
 Distributed Systems design and maintenance has become both a highly sought after skill by employers as well
-as much more prevalent in the skillset of the average engineer. Technologies such as [Kubernetes](https://kubernetes.io) 
-allow software teams to manage and distribute the load of their applications. The most common implementation of this utilizes
-the Kubernetes Deployment and Service, in a configuration as such: 
+as more prevalent in the skillset of the average engineer. Technologies such as [Kubernetes](https://kubernetes.io) 
+allow software teams to manage and distribute load in application delivery. A common implementation of Kubernetes uses
+the Service/Deployment model as such:
 
 ![Figure 1](/images/rpc-for-distributed-systems-figure1.drawio.png)
 <br/>
@@ -81,7 +81,7 @@ protocol. REST design architectures are often seen in CRUD API's, while RPC arch
 high performance and reliability is needed. 
 
 To solve the above issue, we can create a custom `LoadBalancer` service that will accurately depict the realized load on each node
-using RPC. Now, it is possible to build the same software using a REST architecture, but the RPC/Kubernetes integration seems
+using RPC. It is possible to build the same software using a REST architecture, but the RPC/Kubernetes integration seems
 like it was made for each other. 
 
 # Implementation of RPC Principles
@@ -105,10 +105,38 @@ service LoadRouter {
 ```
 
 To break this down, we are defining two messages, `LoadRequest`, and `LoadResponse`. *Messages* are simply a specification of what 
-a valid TCP packet looks like that can be associated with a `Router`. A Router, is an RPC entity that models a pipe. It allows data
-to be sent.
+a valid TCP packet looks like that can be associated with a `Router`. A Router, is an RPC entity that models a data pipe. 
 
-As per this protobuff, this allows a `LoadRequest` message that takes no parameters to a node. In response, a node will return a
-`LoadResponse` that contains a float describing how many computations per minute that is being performed. This communication process
+As per this protobuff, this allows a `LoadRequest` message to bet sent to a node. In response, a node will return a`LoadResponse` 
+that contains a float describing how many computations per minute that is being performed. This communication process
 is documented in the LoadRouter by the function `PollLoad`. 
+
+Implementation of these ProtoBuffs can be handle in almost any language, take python for example: 
+
+{% highlight python %}
+from proto.load_pb2 import LoadRequest, LoadResponse 
+from proto import load_pb2_grpc
+
+class LoadService(load_pb2_grpc.LoadRouterServicer): 
+  def __init__(self, worker):
+    self.worker = worker
+    self.jobs = []
+
+  def _compute_load(): #_
+    return len(jobs)
+  
+  def PollLoad(self, request, context): 
+    print("GRPC request poll load")
+
+{% endhighlight %}
+
+Here, `LoadRequest`, `LoadResponse`, as well as `LoadRouterService` and `load_pb2_grpc` are automatically generated via the 
+[GRPCIO Command Line Tools](https://pypi.org/project/grpcio-tools/). 
+
+# Conclusion
+There are times that standard Load Balancing approaches are not well suited for the task at hand. In cases where balancing
+is specific on unique data points, a more custom-built approach may be the best solution. RPC, and more specifically, gRPC, 
+tends to be an excellent choice as it offers a high degree of robustness as well as reliability in addition to providing 
+the flexibility necessary.
+
 
