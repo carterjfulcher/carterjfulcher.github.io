@@ -28,7 +28,8 @@ in the liquidity pool.
 
 Since there is no order book or order flow in automated liquidity protocols, pricing of an asset is determined by 
 a _constant product formula_, which can be expressed as `x * y = k` where `x` and `y` are the balances of 
-currencies A and B, respectively. `K` is a static factor that 
+currencies A and B, respectively. `K` is a ratio that must remain unchanged. Changing quantities `x` and `y`, to keep
+the factor the same results in price changes for the two underlying tokens. 
 
 
 # L2 Rollup 
