@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<section id="intro">
+  <div class="flex-row-between">
+    <h1 class="title">{{ site.greetings }}</h1>
+  </div>
+  <div class="headline">{{ site.description }}</div>
+  <div class="bio">
+    contact me
+    <code class="language-plaintext">carter@fulcher.io</code> or on discord:
+    <code class="language-plaintext">#carterjfulcher</code><br />
+  </div>
+</section>
+
+<section class="posts" id="Blog">
+  <h2>Blog</h2>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"
+        >{{ post.title }}</a
+      >
+      <time datetime="{{ post.date | date_to_xmlschema }}"
+        >{{ post.date | date: "%Y %b %d" }}</time
+      >
+    </li>
+    {% endfor %}
+  </ul>
+</section>

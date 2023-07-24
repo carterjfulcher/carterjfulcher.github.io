@@ -1,0 +1,48 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-3EP7KLCYVP");
+  </script>
+
+  <body>
+    <main>{% include anchor_headings.html html=content anchorBody="#" %}</main>
+  </body>
+
+  <footer class="social-footer">
+    <div class="social-footer-icons">
+      <a
+        href="https://github.com/andrewgazelka"
+        title="Github profile"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><i class="fa fa-github" aria-hidden="true"></i
+      ></a>
+      <a
+        href="{{site.url}}{{ site.baseurl }}/atom.xml"
+        title="Feed RSS"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><i class="fa fa-rss" aria-hidden="true"></i
+      ></a>
+      <a
+        href="https://github.com/andrewgazelka/andrewgazelka.github.io"
+        title="Browse the code"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><i class="fa fa-code" aria-hidden="true"></i
+      ></a>
+    </div>
+  </footer>
+</html>
