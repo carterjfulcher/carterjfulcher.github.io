@@ -1,8 +1,16 @@
 ---
 layout: post
-title:  "Overview of Real Time Stock Pricing Data"
-date:   2023-07-24 14:01:45 -0700
-categories: Finance 
+title: "Overview of Real Time Stock Prices"
+date: 2023-07-24 14:01:45 -0700
+categories: Finance
 ---
 
-# Hello
+This week I've been working on real time stock prices. Here's what I've learned.
+
+# Types of Data
+
+# Providers
+
+# Processing
+
+# Storing
