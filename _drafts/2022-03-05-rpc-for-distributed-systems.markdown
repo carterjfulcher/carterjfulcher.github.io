@@ -9,6 +9,8 @@ This week I've been working on real time stock prices. Here's what I've learned.
 
 # Types of Data
 
+There are a few key 
+
 # Providers
 
 # Processing
