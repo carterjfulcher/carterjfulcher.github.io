@@ -42,11 +42,21 @@ company {
 
 # The Implementation
 
+This will probably evolve over time, but I'm not just going to wrap an LLM with a chain
+
 # Roadmap
 
-# More Reading
+1. Prototype "Execution Engine"
+
+2. Prototype "Fully Autonomous Company"
+
+3. Write a paper
+
+4. Become world renowned
+
+# Papers
+
+Feel free to send me feedback: [`carter@fulcher.io`](mailto:carter@fulcher.io) or [`@carterjfulcher`](https://x.com/carterjfulcher) on Twitter
 
 - [Tree of Thoughts: Deliberate Problem Solving
   with Large Language Models](https://arxiv.org/pdf/2305.10601.pdf)
-
-Feel free to send me feedback: [`carter@fulcher.io`](mailto:carter@fulcher.io) or [`@carterjfulcher`](https://x.com/carterjfulcher) on Twitter
