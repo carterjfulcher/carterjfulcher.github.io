@@ -312,7 +312,6 @@ h1 {
   font-family: var(--source-code-font), monospace;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   color: var(--header-color) !important;
 }
@@ -366,7 +365,8 @@ section h1:first-child {
 
 strong,
 b {
-  font-weight: bold;
+  font-weight: 800 !important;
+  color: black !important;
 }
 
 .photos ul {

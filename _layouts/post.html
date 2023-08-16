@@ -9,7 +9,7 @@ layout: default
   {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
   <h1 class="title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}"
-    >{{ page.date | date: "%Y %b %d" }}&nbsp;
+    >carterjfulcher • {{ page.date | date: "%Y %b %d" }}&nbsp;
   </time>
   <span class="meta">
     {% for tag in page.tags %}
