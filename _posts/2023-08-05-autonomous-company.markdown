@@ -42,7 +42,7 @@ company {
 
 # The Implementation
 
-This will probably evolve over time, but I'm not just going to wrap an LLM with a chain
+[...]
 
 # Roadmap
 
