@@ -25,10 +25,14 @@ email: carter@fulcher.io
 # title: Andrew Gazelka
 greetings: CARTER J. FULCHER
 description: >-
-  Software, Business, Finance: Soon to be billionaire.
-# description: >- # this means to ignore newlines until "baseurl:"
+  One day, I'll rule the world.
+
+  Previously I worked on Wall St. at a mid stage company where I solo-developed software that directs over $1.9 Billion dollars.
+
+  I also run a family private equity firm holding real estate, commerical equipment, and long/short equity positions.
+
 baseurl: "/"# the subpath of your site, e.g. /blog
-url: "https://carterjfulcher.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://carterfulcher.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: carterjfulcher
 github_username:  carterjfulcher
 
