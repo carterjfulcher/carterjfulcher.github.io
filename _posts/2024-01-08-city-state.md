@@ -8,7 +8,7 @@ location: Meridian, ID
 
 The way you disrupt a government is not with an army and soldiers.
 
-I'll do it by beating the government 100x by every metric at it's own game. Who wants to move to my city state?
+I'll do it by beating the government 100x on every core service.
 
 - 5 cent / kwh energy - this is theoretically possible. Nuclear would be the ideal, but solar is within a stones throw at scale. Idaho Power operates at 21% net margins.
 
