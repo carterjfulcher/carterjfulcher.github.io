@@ -61,6 +61,6 @@ We do not yet have pricing regarding OpenAI's Soma, but I am guessing it will be
 
 There are several weaknesses and limitations to the Soma model, such as inability to handle complex physics, restriction around violent content, and resolution constraints. However, I believe a combination of incremental improvements and the open source ML community will help minimize these issues.
 
-## Conclusion
+--
 
 I think the collapse of the moat around high quality cinematic content will be a "death by a thousand paper cuts" scenario for media companies. Hundreds, or thousands of smaller content creators will be able to produce and distribute (via platforms like YouTube, X, etc.) content cutting into the media companies' market share.
