@@ -25,11 +25,13 @@ email: carter@fulcher.io
 # title: Andrew Gazelka
 greetings: CARTER J. FULCHER
 description: >-
-  One day, I'll rule the world.
+  Life-long investor, pilot, and entrepreneur.<br/><br/>
 
-  Previously I worked on Wall St. at a mid stage company where I solo-developed software that directs over $1.9 Billion dollars.
+  Previously I worked on Wall St. at a mid stage company where I solo-developed software that directs over $1.9 Billion dollars.<br/><br/>
 
-  I also run a family private equity firm holding real estate, commerical equipment, and long/short equity positions.
+  Currently I'm working on disrupting Bloomberg with a better, more affordable, and web-based financial terminal.<br/><br/>
+
+  I also run a family private equity firm holding real estate, commerical equipment, and long/short equity positions.<br/>
 
 baseurl: "/"# the subpath of your site, e.g. /blog
 url: "https://carterfulcher.com" # the base hostname & protocol for your site, e.g. http://example.com
