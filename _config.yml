@@ -27,11 +27,11 @@ greetings: CARTER J. FULCHER
 description: >-
   Life-long investor, pilot, and entrepreneur.<br/><br/>
 
-  Previously I worked on Wall St. asset management firm where I developed software that directs over $1.9 Billion dollars.<br/><br/>
+  Previously I worked on Wall St. asset management firm where I developed software that directed over $1.9 Billion dollars.<br/><br/>
 
-  Currently I'm working on disrupting Bloomberg with a better, more affordable, and web-based financial terminal.<br/><br/>
+  Currently I'm working on building a financial software company to service banks and hedge funds with financial data.<br/><br/>
 
-  I also run a family private equity firm holding real estate, commerical equipment, and long/short equity positions.<br/>
+  I also run a family private equity firm holding real estate, commerical equipment, and long/short equity positions.<br/><br/>
 
 baseurl: "/"# the subpath of your site, e.g. /blog
 url: "https://carterfulcher.com" # the base hostname & protocol for your site, e.g. http://example.com
