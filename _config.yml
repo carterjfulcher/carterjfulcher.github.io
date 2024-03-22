@@ -31,7 +31,7 @@ description: >-
 
   Currently I'm working on building a financial software company to service banks and hedge funds with financial data.<br/><br/>
 
-  I also run a family private equity firm holding real estate, commerical equipment, and long/short equity positions.<br/><br/>
+  I also run a family firm holding real estate, commerical equipment, and long/short equity positions.<br/><br/>
 
 baseurl: "/"# the subpath of your site, e.g. /blog
 url: "https://carterfulcher.com" # the base hostname & protocol for your site, e.g. http://example.com
